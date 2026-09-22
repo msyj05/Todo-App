@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap");
+
+@theme {
+  --color-paper: #eef0ea;
+  --color-surface: #ffffff;
+  --color-ink: #202b24;
+  --color-ink-muted: #6b776c;
+  --color-rule: #d8ded2;
+  --color-accent: #3d6355;
+  --color-accent-dark: #2f4e43;
+  --color-gold: #b98b3e;
+  --color-danger: #b5533c;
+
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Source Serif 4", ui-serif, serif;
+}
+
+@layer base {
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+}
